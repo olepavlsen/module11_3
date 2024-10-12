@@ -15,7 +15,6 @@ def introspection_info(obj):
         dict_info['methods'] = meths
         module = inspect.getmodule(obj)
         dict_info['module'] = module.name if module else "__main__"
-        #dict_info['module'] = inspect.getmodule(obj)
     return dict_info
 
 
